@@ -23,5 +23,5 @@ jobs:
 
       - name: Run Python Script
         env:
-          GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
+          GCP_CREDENTIALS: ${{ secrets.NSE_SECRET_KEY}}
         run: python update_sheet.py
